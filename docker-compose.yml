@@ -1,4 +1,4 @@
-version: "3.7"
+#version: "3.7"
 
 x-datanode_base: &datanode_base
   image: hadoop-datanode
@@ -105,8 +105,8 @@ services:
       - bridge
     volumes:
       - namenode:/opt/spark/eventLog
-      - /env/hadoop-eco/hadoop/zeppelin/notebook:/zeppelin-0.10.1-bin-all/notebook
-      - /home/ec2-user/testdata:/testdata
+      - /home/dhsong/hadoop/zeppelin/notebook:/zeppelin-0.10.1-bin-all/notebook
+      - /home/dhsong/hadoop/testdata:/testdata
 
 volumes:
   namenode:
