@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 네임스페이스 디렉토리를 입력받아서 
-NAME_DIR=/opt/hadoop/dfs/name
+NAME_DIR=$1
 echo $NAME_DIR
 
 # 비어있지 않다면 이미 포맷된 것이므로 건너뛰고
